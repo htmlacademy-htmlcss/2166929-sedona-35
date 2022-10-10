@@ -77,7 +77,7 @@ body {
 }
 
 .advantages-description-reason {
-  font-size: 20px;
+  font-size: 22px;
   line-height: 26px;
 }
 
@@ -98,6 +98,7 @@ body {
   line-height: 28px;
   font-weight: 700;
   color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 .advantages-element-description {
@@ -108,6 +109,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .infrastructure {
@@ -126,6 +128,7 @@ infrastructure-item-eat {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .hotel-search {
@@ -140,7 +143,7 @@ infrastructure-item-eat {
 }
 
 .hotel-search-description {
-  font-size: 20px;
+  font-size: 22px;
   line-height: 26px;
 }
 
@@ -173,8 +176,18 @@ infrastructure-item-eat {
 }
 
 .subscribe-description {
-  font-size: 20px;
+  font-size: 22px;
   line-height: 26px;
+}
+
+.field-input {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #FFFFFF;
+  border:none;
 }
 
 .subscribe-button {
@@ -186,6 +199,7 @@ infrastructure-item-eat {
   text-align: center;
   color: #FFFFFF;
   background-color: #82B3D3;
+  border:none;
 }
 
 .page-footer {
@@ -227,6 +241,7 @@ infrastructure-item-eat {
   color: #FFFFFF;
   background-color: #82B3D3;
   text-decoration: none;
+  border:none;
 }
 
 .inner-block {
@@ -266,6 +281,17 @@ infrastructure-item-eat {
   text-align: center;
   color: #FFFFFF;
   background-color: transparent;
+  border:none;
+}
+
+.select-control {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  background-color: #FFFFFF;
+  border: 2px solid #E5E5E5;
 }
 
 .catalog-result {
@@ -288,12 +314,15 @@ infrastructure-item-eat {
 }
 
 .cards-link {
+  text-decoration: none;
+}
+
+.cards-title {
   font-family: "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   color: #000000;
-  text-decoration: none;
 }
 
 .cards-price {
@@ -330,6 +359,10 @@ infrastructure-item-eat {
 
 .main-inner .subscribe {
   text-align: center;
+}
+
+.main-inner .field-input {
+  background-color: #F2F2F2;
 }
 
 .pagination-link {
