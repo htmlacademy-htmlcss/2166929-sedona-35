@@ -14,13 +14,60 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   color: #000000;
   background-color: #FFFFFF;
+}
+
+.page-container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.page-menu {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation-list {
+  width: 440px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-list {
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: auto;
+}
+
+.navigation-logo {
+  width: 138px;
+  margin-right: 28px;
 }
 
 .navigation-link {
@@ -59,14 +106,27 @@ body {
 
 .first-block {
   background-color: #E6F0F6;
-  background-image: url("../images/background_images/background_index_first_block.jpg");
+  background-image: url("../images/background_images/index_decor.svg"), url("../images/background_images/background_index_first_block.jpg") ;
   background-size: 100% auto;
-  background-repeat: no-repeat;
-  text-align: center;
+  background-position: center bottom, center;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.main-welcome-text {
+  display: block;
+  margin: 0 auto;
 }
 
 .advantages {
   text-align: center;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .advantages-subtitle {
@@ -81,6 +141,10 @@ body {
   line-height: 26px;
 }
 
+.advantages-item {
+  width: 400px;
+}
+
 .advantages-item:nth-child(even) {
   background-color: #F0F6FA;
 }
@@ -90,6 +154,7 @@ body {
 }
 
 .advantages-item:first-child, .advantages-item:last-child  {
+  width: 1200px;
   background-color: #82B3D3;
 }
 
@@ -114,6 +179,17 @@ body {
 
 .infrastructure {
   text-align: center;
+}
+
+.infrastructure-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.infrastructure-item {
+  width: 400px;
 }
 
 .infrastructure-item:nth-child(odd) {
@@ -203,8 +279,24 @@ infrastructure-item-eat {
 }
 
 .page-footer {
-  text-align: center;
   background-color: #FFFFFF;
+}
+
+.page-footer-container {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.footer-social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-social {
+  width: 150px;
+  margin-right: 205px;
 }
 
 .page-footer a {
@@ -229,6 +321,10 @@ infrastructure-item-eat {
   text-decoration-line: none;
 }
 
+.developer-logo {
+  margin-left: auto;
+}
+
 /*Каталог*/
 
 .button {
@@ -244,12 +340,21 @@ infrastructure-item-eat {
   border:none;
 }
 
-.inner-block {
+.inner-container {
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.inner-container-filter {
   color: #FFFFFF;
-  background-color: #82B3D3;
   background-image: url("../images/background_images/background_catalog.jpg");
-  background-size: cover;
+  background-color: #82B3D3;
+  background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.inner-control-filter {
+  display: flex;
 }
 
 .inner-header-title {
@@ -258,12 +363,37 @@ infrastructure-item-eat {
   font-weight: 700;
 }
 
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .breadcrumbs-link {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
   color: #FFFFFF;
+}
+
+.control-filter-group {
+  width: 150px;
+  margin-right: 70px;
+}
+
+.control-filter-group:nth-child(2) {
+  margin-right: 140px;
+}
+
+.control-filter-group-price {
+  width: 288px;
+}
+
+.control-filter-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .control-filter-title {
@@ -294,6 +424,11 @@ infrastructure-item-eat {
   border: 2px solid #E5E5E5;
 }
 
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .catalog-result {
   font-size: 30px;
   line-height: 36px;
@@ -311,6 +446,17 @@ infrastructure-item-eat {
   color: #000000;
   background-color: #F2F2F2;
   text-decoration: none;
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.cards-item {
+  list-style: none;
 }
 
 .cards-link {
@@ -365,12 +511,18 @@ infrastructure-item-eat {
   background-color: #F2F2F2;
 }
 
+.pagination {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .pagination-link {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
-  color: #000000;
+  color: #FFFFFF;
   background-color: #82B3D3;
   text-decoration: none;
 }
