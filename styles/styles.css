@@ -71,6 +71,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-left: 168px;
 }
 
 .menu-list {
@@ -81,16 +82,17 @@ body {
   padding: 0;
   list-style: none;
   margin-left: auto;
+  align-items: center;
 }
 
 .navigation-logo {
-  width: 138px;
-  margin-right: 28px;
+  width: 140px;
+  position: absolute;
 }
 
 .navigation-link {
   display: block;
-  padding: 16px 20px;
+  padding: 20px 16px;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 24px;
@@ -316,6 +318,7 @@ infrastructure-item-eat {
   background-color: #756157;
   text-decoration: none;
   margin-bottom: 96px;
+  padding: 8px 50px;
 }
 
 .main-index .subscribe {
@@ -348,6 +351,12 @@ infrastructure-item-eat {
   margin-bottom: 54px;
 }
 
+.subscribe-form {
+  display: flex;
+  width: 684px;
+  margin: 0 auto;
+}
+
 .field-input {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -356,6 +365,8 @@ infrastructure-item-eat {
   color: #000000;
   background-color: #FFFFFF;
   border:none;
+  padding: 14px 0 14px 20px;
+  width: 452px;
 }
 
 .subscribe-button {
@@ -368,6 +379,7 @@ infrastructure-item-eat {
   color: #FFFFFF;
   background-color: #82B3D3;
   border:none;
+  padding: 8px 50px;
 }
 
 .page-footer {
@@ -452,7 +464,7 @@ infrastructure-item-eat {
   background-size: 100% auto;
   background-repeat: no-repeat;
   padding: 35px 0 70px 0;
-  margin-bottom: 56px;
+  margin-bottom: 50px;
 }
 
 .inner-control-filter {
@@ -509,6 +521,17 @@ infrastructure-item-eat {
   font-weight: 700;
 }
 
+.control-filter-buttton {
+  min-width: 191px;
+  align-self: end;
+}
+
+.button-apply {
+  padding: 8px 0;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
 .button-reset {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
@@ -519,6 +542,8 @@ infrastructure-item-eat {
   color: #FFFFFF;
   background-color: transparent;
   border:none;
+  padding: 8px 0;
+  width: 100%;
 }
 
 .select-control {
@@ -535,7 +560,7 @@ infrastructure-item-eat {
 .filter-container {
   display: flex;
   align-items: center;
-  margin-bottom: 46px;
+  margin-bottom: 40px;
 }
 
 .catalog-result {
@@ -576,7 +601,9 @@ infrastructure-item-eat {
 }
 
 .cards-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -584,8 +611,29 @@ infrastructure-item-eat {
   margin-bottom: 80px;
 }
 
+.cards-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid #E6E6E6;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  column-gap: 20px;
+  row-gap: 16px;
+}
+
 .cards-link {
   text-decoration: none;
+}
+
+.cards-image {
+  display: block;
+  margin-bottom: 16px;
 }
 
 .cards-title {
@@ -594,10 +642,16 @@ infrastructure-item-eat {
   line-height: 28px;
   font-weight: 700;
   color: #000000;
+  margin: 0 0 16px 0;
+}
+
+.cards-description {
+  margin: 0;
 }
 
 .cards-price {
   font-weight: 400;
+  justify-self: end;
 }
 
 .cards-button {
@@ -610,6 +664,7 @@ infrastructure-item-eat {
   color: #FFFFFF;
   background-color: #756157;
   text-decoration: none;
+  padding: 8px 0;
 }
 
 .cards-button-favorites {
@@ -626,6 +681,8 @@ infrastructure-item-eat {
   text-transform: uppercase;
   text-align: center;
   background-color: #F2F2F2;
+  grid-column-start: 2;
+  padding: 8px 0;
 }
 
 .main-inner .subscribe {
